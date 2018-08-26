@@ -1,0 +1,56 @@
+.explain {
+    font-size: 30px !important;
+  }
+.x.axis line {
+    stroke: white;
+}
+.x.axis path {
+    stroke: white;
+}
+.x.axis text {
+    fill: white;
+}
+.y.axis line {
+    stroke: white;
+}
+.y.axis path {
+    stroke: white;
+}
+.y.axis text {
+    fill: white;
+}
+.bar {
+    fill: steelblue;
+}  
+.bar:hover {
+    fill: gray;
+} 
+
+
+
+
+h3 {
+    margin-top: 15px;
+}
+.weapon {
+    margin: 0 !important;
+    font-size: 24px !important;
+}
+.key-dot {
+    display: inline-block;
+    height: 10px;
+    margin-right: .5em;
+    width: 10px;
+}
+.legend1 {
+    margin-right:20px;
+}
+.uno { background: #6b486b;}
+.dos { background: #7b6888;}
+.tres { background: #AEC7E8;}
+.cuatro { background: #a05d56;}
+.cinco { background: #d0743c;}
+.seis { background: #ff8c00;}
+.siete { background: #98abc5;}
+.ocho { background: #FF9896;}
+.nueve { background: #8a89a6;}

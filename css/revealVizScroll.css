@@ -1,0 +1,17 @@
+.reveal .slides .scrollable {
+  display: none;
+  width: 55%;
+  margin-left: 20px;
+}
+.reveal .slides>section {
+  width: 100%;
+}
+.reveal.scrolling .slides>section {
+  width: 38.2%;
+}
+.reveal.scrolling .slides .scrollable {
+  float: right;
+}
+.scroll {
+  top: 50px !important;
+}

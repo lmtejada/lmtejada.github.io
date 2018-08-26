@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Visualización de datos - Seminario</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/revealVizScroll.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+				<section>
+					<h1>Visualización de datos - Seminario</h1>
+					<h2>Por: Laura Tejada</h2>
+					<p>Análisis sobre casos de hurto reportados en 2016</p>
+				</section>
+				<section class="scroll" scrollable="content" step="1">
+					<p class="explain">En el año 2016 fueron reportados 146.069 casos de hurto a personas en el país, encontrando que el mayor número de casos
+						se presentaron en Cundinamarca, Antioquia y Valle del Cauca.
+						<br/> Sin embargo...
+					</p>
+				</section>
+				<section class="scroll" scrollable="content" step="2">
+					<p class="explain">Este número de casos se corresponde con el tamaño de la población. Si calculamos la relación entre el número de casos
+						de hurto respecto al tamaño de la población encontramos que en general a mayor población, mayor número de casos de
+						hurto. Salvo algunas excepciones...
+					</p>
+				</section>
+				<section class="scroll" scrollable="content" step="3">
+					<p class="explain">Esta relación se puede apreciar mejor si dibujamos un scatter plot, observando que se encuentra una relación directamente
+						proporcional entre la población y el número de casos de hurto reportados.
+					</p>
+				</section>
+				<section class="scroll" scrollable="content" step="4">
+					<p class="explain">Respecto al tipo de arma que se usó para cometer el delito se encontró que en el mayor número de casos no se utilizó
+						ningún arma.
+					</p>
+					<div class="legend1">
+						<div class="legend1">
+							<p class="weapon">
+								<span class="key-dot uno"></span> SIN EMPLEO DE ARMAS</p>
+						</div>
+						<div class="legend1">
+							<p class="weapon">
+								<span class="key-dot dos"></span> ARMA DE FUEGO</p>
+						</div>
+						<div class="legend1">
+							<p class="weapon">
+								<span class="key-dot tres"></span> ARMA BLANCA / CORTOPUNZANTE</p>
+						</div>
+						<div class="legend1">
+							<p class="weapon">
+								<span class="key-dot cuatro"></span> CONTUNDENTES</p>
+						</div>
+						<div class="legend1">
+							<p class="weapon">
+								<span class="key-dot cinco"></span> ESCOPOLAMINA</p>
+						</div>
+						<div class="legend1">
+							<p class="weapon">
+								<span class="key-dot seis"></span> CORTANTES</p>
+						</div>
+						<div class="legend1">
+							<p class="weapon">
+								<span class="key-dot siete"></span> PERRO</p>
+						</div>
+						<div class="legend1">
+							<p class="weapon">
+								<span class="key-dot ocho"></span> ARMAS BLANCAS</p>
+						</div>
+						<div class="legend1">
+							<p class="weapon">
+								<span class="key-dot nueve"></span> JERINGA</p>
+						</div>
+					</div>
+				</section>
+				<section class="scroll" scrollable="content" step="5">
+					<p class="explain">Respecto al medio de transporte utilizado para llevar a cabo el hurto, se encontró que en 113.620 de los casos reportados,
+						el asaltante se movilizaba a pie.
+					</p>
+				</section>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="js/d3.v4.min.js"></script>
+	<script src="js/functions.js"></script>
+
+	<script>
+		Reveal.initialize({
+			controls: false,
+			mouseWheel: true,
+			dependencies: [
+				{
+					src: "js/revealVizScroll.js",
+					async: false,
+					callback: function () {
+						revealVizScroll.makeScrollable("content", doStep);
+					}
+				}
+			],
+
+		});
+	</script>
+</body>
+
+</html>
